@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #111;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    color: #ff9f1c;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar li {
+    margin-left: 20px;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: #ff9f1c;
+}
+
+.banner {
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* centers content horizontally */
+    justify-content: center; /* centers content vertically */
+    position: relative;
+}
+
+.banner .logo-img {
+    height: 50px;
+    margin-bottom: 20px; /* optional spacing below logo */
+}
+
+/* ORDER FORM */
+.order-form {
+    max-width: 1200px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+.order-form h2 {
+    color: #ff9f1c;
+    margin-bottom: 20px;
+}
+
+.order-form input, .order-form select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    background: #1f1f1f;
+    border: none;
+    border-radius: 8px;
+    color: white;
+}
+
+/* MENU GRID */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.menu-card {
+    background: #1a1a1a;
+    border-radius: 16px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s;
+    position: relative;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.menu-card h3 {
+    margin: 15px;
+}
+
+.menu-card span {
+    margin: 0 15px 15px;
+    display: block;
+    color: #ff9f1c;
+    font-weight: bold;
+}
+
+.menu-card input {
+    position: absolute;
+    opacity: 0;
+}
+
+.menu-card:has(input:checked) {
+    outline: 3px solid #ff9f1c;
+}
+
+.menu-card:hover {
+    transform: translateY(-8px);
+}
+
+/* BUTTON */
+.pay-btn {
+    margin-top: 30px;
+    padding: 15px;
+    width: 100%;
+    font-size: 18px;
+    background: #ff9f1c;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.pay-btn:hover {
+    background: #ff5722;
+}
+
+/* FOOTER */
+.footer {
+    background: #111;
+    padding: 30px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.footer i {
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* ================= STICKY NOTE ORDERS ================= */
+
+.order-list {
+    max-width: 1300px;
+    margin: 80px auto;
+    padding: 0 20px;
+    background: url("corkboard.jpg");
+    background-size: cover;
+    padding: 60px 20px;
+    border-radius: 12px;
+}
+
+.order-list h2 {
+    color: #ff9f1c;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Sticky note style */
+.success-box {
+    background: #fff8a6;
+    color: #111;
+    width: 280px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 6px;
+    box-shadow:
+        0 6px 10px rgba(0,0,0,0.4),
+        0 2px 0 rgba(0,0,0,0.2);
+    position: relative;
+    transform: rotate(-1.5deg);
+    transition: 0.3s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Random-looking rotation for variation */
+.success-box:nth-child(even) {
+    transform: rotate(1.5deg);
+}
+
+.success-box:hover {
+    transform: scale(1.05) rotate(0deg);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.6);
+}
+
+/* Pushpin effect */
+.success-box::before {
+    content: "";
+    width: 14px;
+    height: 14px;
+    background: crimson;
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: inset -2px -2px 4px rgba(0,0,0,0.4);
+}
+
+/* Order text */
+.success-box h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.success-box p {
+    font-size: 15px;
+    margin-bottom: 6px;
+}
+
+/* Status highlight */
+.success-box p:last-of-type {
+    font-weight: bold;
+}
+
+/* Pay button inside sticky note */
+.success-box .pay-btn {
+    margin-top: 12px;
+    padding: 10px;
+    font-size: 14px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+/* Paid orders */
+.success-box.paid {
+    background: #b6f1b6; /* green */
+}
+
+/* Pending orders */
+.success-box.pending {
+    background: #ffb6b6; /* red */
+}
