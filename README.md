@@ -1,6 +1,7 @@
 # Bogart Bites 🍔
 
 **Bogart Bites** is a simple dynamic restaurant web application featuring a table-based ordering system and order display functionality.
+
 This project was built as part of my learning journey in web development, with a focus on backend logic, server-side processing, and dynamic data handling.
 
 ---
