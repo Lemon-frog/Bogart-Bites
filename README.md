@@ -1,3 +1,26 @@
+## 🖼️ Preview
+
+### Homepage
+![Homepage](screenshots/Homepage.png)
+
+### Order System
+![Order System](screenshots/Order-system.png)
+
+### Payment Successful
+![Payment Successful](screenshots/Payment-successful.png)
+
+### Order Tabs
+![Order Tabs](screenshots/Order-tabs.png)
+
+Screenshots showcasing the following features will be added:
+
+- Homepage
+- Order System
+- Payment Successful
+- Order tabs
+
+---
+
 # Bogart Bites 🍔
 
 **Bogart Bites** is a simple dynamic restaurant web application featuring a table-based ordering system and order display functionality.
@@ -21,29 +44,6 @@ This project was built as part of my learning journey in web development, with a
 - HTML
 - CSS
 - MySQL (database connection handled in `db.php`)
-
----
-
-## 🖼️ Preview
-
-### Homepage
-![Homepage](screenshots/Homepage.png)
-
-### Order System
-![Order System](screenshots/Order-system.png)
-
-### Payment Successful
-![Payment Successful](screenshots/Payment-successful.png)
-
-### Order Tabs
-![Order Tabs](screenshots/Order-tabs.png)
-
-Screenshots showcasing the following features will be added:
-
-- Homepage
-- Order System
-- Payment Successful
-- Order tabs
 
 ---
 
