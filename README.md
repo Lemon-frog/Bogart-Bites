@@ -1,4 +1,4 @@
-## 🖼️ Preview
+## Preview
 
 ### Homepage
 ![Homepage](screenshots/Homepage.png)
@@ -21,7 +21,7 @@ Screenshots showcasing the following features will be added:
 
 ---
 
-# Bogart Bites 🍔
+# Bogart Bites 
 
 **Bogart Bites** is a simple dynamic restaurant web application featuring a table-based ordering system and order display functionality.
 
@@ -29,17 +29,17 @@ This project was built as part of my learning journey in web development, with a
 
 ---
 
-## ✨ Features
+## Features
 
-- 📋 Menu display with food items
-- 🪑 Table-based ordering system
-- 🧾 Order processing logic
-- 📊 Order display for tracking customer orders
-- 🎨 Basic UI styling for a restaurant setting
+-  Menu display with food items
+-  Table-based ordering system
+-  Order processing logic
+-  Order display for tracking customer orders
+-  Basic UI styling for a restaurant setting
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 - PHP
 - HTML
 - CSS
@@ -47,7 +47,7 @@ This project was built as part of my learning journey in web development, with a
 
 ---
 
-## 🚀 How to Run
+## How to Run
 This project is intended to be run on a local server environment such as:
 - XAMPP
 - WAMP
@@ -70,7 +70,7 @@ This project is intended to be run on a local server environment such as:
 
 ---
 
-## 👤 Author
+## Author
 
 **Jose Victor Siong**  
 BS Information Technology Student  
